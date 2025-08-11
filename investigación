@@ -1,0 +1,49 @@
+qué son las estructuras de datos?
+Las estructuras de datos son formas organizadas de almacenar y gestionar información dentro de un programa, con el fin de facilitar su acceso, modificación y procesamiento. Permiten representar datos de manera lógica para resolver problemas de forma eficiente.
+Ejemplos comunes son: arreglos, listas enlazadas, pilas, colas, árboles y grafos.
+
+2. Diferencia entre un arreglo y una lista
+Característica	Arreglo (Array)	Lista
+Tamaño	Fijo al momento de su creación.	Dinámico; puede crecer o disminuir.
+Ubicación en memoria	Espacio contiguo en memoria.	Elementos pueden estar en diferentes ubicaciones, enlazados entre sí.
+Acceso a elementos	Acceso directo por índice (rápido).	Acceso secuencial (más lento para posiciones intermedias).
+Flexibilidad	Menos flexible; no se puede cambiar el tamaño fácilmente.	Más flexible; fácil inserción y eliminación de elementos.
+
+3. Ventajas y desventajas de usar arreglos
+Ventajas:
+
+Acceso rápido a cualquier elemento mediante su índice.
+
+Fácil de implementar y manejar en la mayoría de lenguajes.
+
+Eficiente en operaciones de lectura.
+
+Desventajas:
+
+Tamaño fijo, lo que puede generar desperdicio de memoria o falta de espacio.
+
+Inserciones y eliminaciones son costosas, ya que requieren mover elementos.
+
+No permite un crecimiento automático de forma nativa (salvo en estructuras tipo ArrayList en Java o list en Python, que internamente se basan en arreglos dinámicos).
+
+4. Tres ejemplos de estructuras dinámicas y sus usos
+Lista enlazada (Linked List) → Almacena elementos conectados mediante punteros.
+Uso: cuando se requiere insertar o eliminar datos con frecuencia sin reorganizar todo el conjunto.
+
+Pila (Stack) → Sigue el principio LIFO (Last In, First Out).
+Uso: manejo de historial en navegadores, ejecución de funciones en programación.
+
+Cola (Queue) → Sigue el principio FIFO (First In, First Out).
+Uso: sistemas de turnos, gestión de procesos en sistemas operativos.
+
+5. Importancia de la eficiencia algorítmica en el uso de estructuras de datos
+La eficiencia algorítmica determina qué tan rápido y con cuántos recursos (memoria, procesamiento) se ejecuta un programa al manipular datos.
+Elegir la estructura de datos adecuada permite:
+
+Reducir tiempos de ejecución.
+
+Optimizar el uso de memoria.
+
+Escalar el software para manejar grandes volúmenes de información.
+
+Un mal diseño puede hacer que un programa tarde segundos o incluso horas en realizar la misma tarea, afectando su rendimiento y viabilidad.
