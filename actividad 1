@@ -1,0 +1,164 @@
+1.	public class PromedioEdades {
+    public static void main(String[] args) {
+        
+        
+        String nombre1 = "Juan";
+        String nombre2 = "María";
+        String nombre3 = "Pedro";
+        
+        
+        int edad1 = 20;
+        int edad2 = 25;
+        int edad3 = 30;
+        
+       
+        double promedio = (edad1 + edad2 + edad3) / 3;
+        
+        
+        System.out.println("Nombre 1: " + nombre1 + " - Edad: " + edad1);
+        System.out.println("Nombre 2: " + nombre2 + " - Edad: " + edad2);
+        System.out.println("Nombre 3: " + nombre3 + " - Edad: " + edad3);
+        System.out.println("Promedio de edades: " + promedio);
+    }
+}
+
+
+
+
+
+
+
+2.	class Libro {
+    public static void main(String[] args) {
+        
+        String autor = "Gabriel García Márquez";
+        String titulo = "Cien años de soledad";
+        int anio = 1967;
+        double precio = 59900;
+
+      
+        System.out.println("Autor: " + autor);
+        System.out.println("Título: " + titulo);
+        System.out.println("Año: " + anio);
+        System.out.println("Precio: $" + precio);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+3.	public class Empleado {
+    public static void main(String[] args) {
+        
+        int id = 101;
+        String nombre = "Juan Pérez";
+        double salario = 2500.50;
+
+        
+        System.out.println("ID: " + id);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Salario: $" + salario);
+    }
+}
+
+
+
+
+
+
+
+
+4.	public class CuentaBancaria {
+    String numeroCuenta;
+    double saldo;
+
+    
+    public void depositar(double cantidad) {
+        saldo += cantidad;
+        System.out.println("Has depositado $" + cantidad);
+    }
+
+    
+    public void retirar(double cantidad) {
+        if (cantidad <= saldo) {
+            saldo -= cantidad;
+            System.out.println("Has retirado $" + cantidad);
+        } else {
+            System.out.println("Fondos insuficientes.");
+        }
+    }
+
+    public static void main(String[] args) {
+        
+        CuentaBancaria cuenta = new CuentaBancaria();
+        cuenta.numeroCuenta = "123456789";
+        cuenta.saldo = 1000;
+
+        
+        System.out.println("Número de cuenta: " + cuenta.numeroCuenta);
+        System.out.println("Saldo inicial: $" + cuenta.saldo);
+
+        
+        cuenta.depositar(500);
+        System.out.println("Saldo después de depósito: $" + cuenta.saldo);
+
+        
+        cuenta.retirar(300);
+        System.out.println("Saldo después de retiro: $" + cuenta.saldo);
+
+        
+        cuenta.retirar(2000);
+        System.out.println("Saldo final: $" + cuenta.saldo);
+    }
+}
+
+
+
+
+
+
+
+
+
+5.	public class Vehiculo {
+    String marca;
+    String modelo;
+    int anio;
+
+    public static void main(String[] args) {
+        
+        Vehiculo vehiculo1 = new Vehiculo();
+        vehiculo1.marca = "Toyota";
+        vehiculo1.modelo = "Corolla";
+        vehiculo1.anio = 2020;
+
+        
+        Vehiculo vehiculo2 = new Vehiculo();
+        vehiculo2.marca = "Honda";
+        vehiculo2.modelo = "Civic";
+        vehiculo2.anio = 2022;
+
+        
+        System.out.println("Vehículo 1:");
+        System.out.println("Marca: " + vehiculo1.marca);
+        System.out.println("Modelo: " + vehiculo1.modelo);
+        System.out.println("Año: " + vehiculo1.anio);
+
+        
+        System.out.println("\nVehículo 2:");
+        System.out.println("Marca: " + vehiculo2.marca);
+        System.out.println("Modelo: " + vehiculo2.modelo);
+        System.out.println("Año: " + vehiculo2.anio);
+    }
+}
+
+
+
+
